@@ -1,0 +1,119 @@
+:root {
+  --accent_color: #a604f2;
+  --light_purple: #763af5;
+}
+
+body {
+  background: linear-gradient(90deg in oklab, rgb(30, 3, 26), rgb(17, 1, 50));
+  width: 100vw;
+  height: 100vh;
+  font-family: "Rubik", system-ui;
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.title {
+  font-size: 50px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 20%;
+  left: 50%;
+}
+.main_container {
+  color: white;
+  width: 80vw;
+  height: 90%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.175);
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.title_place {
+  width: 100%;
+  height: 5%;
+  position: relative;
+}
+.cosmonaut {
+  width: 90%;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+
+.main_content {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* justify-items: center; */
+  padding-top: 100px;
+  padding-bottom: 200px;
+  margin: 0 auto;
+}
+.picture {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.picture p {
+  font-weight: 300;
+  position: absolute;
+  z-index: 2;
+  top: 80%;
+  left: 10%;
+  width: 80%;
+  font-size: 15px;
+}
+.forms {
+  display: flex;
+  flex-direction: column;
+}
+
+.my_tasks {
+  border: 1px solid white;
+  width: 70%;
+  height: 60%;
+  border-radius: 10px;
+  margin-top: 20px;
+  background: linear-gradient(
+    90deg in oklab,
+    rgba(84, 15, 72, 0.389),
+    rgba(36, 6, 96, 0.607)
+  );
+}
+.btn {
+  color: white;
+  background: linear-gradient(90deg in oklab, rgb(84, 15, 20), rgb(91, 6, 96));
+  border-radius: 5px;
+  border: none;
+  width: 40%;
+  height: 30px;
+  margin-top: 10px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.input {
+  color: white;
+  background: linear-gradient(
+    90deg in oklab,
+    rgba(84, 15, 72, 0.623),
+    rgba(36, 6, 96, 0.607)
+  );
+  border-radius: 5px;
+  border: 1px solid white;
+  width: 65%;
+  padding-left: 22px;
+  height: 30px;
+}
+.input:focus {
+  outline: none;
+  border: 1px solid white;
+}
